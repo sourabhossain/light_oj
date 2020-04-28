@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
 
 	for(int i = 1; i <= T; i++) {
 		scanf("%lld%lld", &n, &m);
-		printf("Case %d: %lld\n", i, ((m * ((m << 1) + 1)) - (m * (m + 1))) * (n / (m << 1)));
+		printf("Case %d: %lld\n", i, (n * m) >> 1);
 	}
 
 	return 0;
