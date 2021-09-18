@@ -19,7 +19,7 @@ int count(long long n) {
 long long solve(long long n) {
     long long result = 0;
 
-    for (long long i = 1; i <= n; i *= 2) {
+    for (long long i = 1; i <= n; i <<= 1) {
         if (n & i) {
             result = n + i;
             break;
